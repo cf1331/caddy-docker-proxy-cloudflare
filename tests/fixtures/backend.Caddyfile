@@ -1,0 +1,3 @@
+:80 {
+	respond "Docker labels route requests"
+}
