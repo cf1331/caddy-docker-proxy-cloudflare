@@ -2,7 +2,7 @@ ARG CADDY_DOCKER_PROXY_VERSION=2.13.1
 # renovate: datasource=github-tags depName=caddy-dns/cloudflare
 ARG CLOUDFLARE_VERSION=v0.2.4
 
-FROM caddy:2.11.9-builder@sha256:3fddbec729442a56b942d4c9eaef1df80893dbf2cf5b86701bfae6aad1408eeb AS builder
+FROM caddy:2.11.9-builder@sha256:345264d8c6b50f44f4a4d507d4e6b6bcae40eef2f210d70f76e717fd8cc31baf AS builder
 ARG CADDY_DOCKER_PROXY_VERSION
 ARG CLOUDFLARE_VERSION
 RUN CGO_ENABLED=0 XCADDY_SETCAP=0 xcaddy build ${CADDY_VERSION} \
